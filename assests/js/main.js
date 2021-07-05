@@ -12,8 +12,8 @@ function changeMarks(courseId)
     else{
         alert("Please Enter Marks between 0 to 100");
         marks.value = "";
-        course.querySelector("#gradePoint").innerHTML = "";
-        course.querySelector("#grade").innerHTML = "";
+        course.querySelector("#gradePoint").innerHTML = "-";
+        course.querySelector("#grade").innerHTML = "-";
     }     
 }
 
