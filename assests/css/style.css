@@ -15,10 +15,12 @@ header h1{
     text-align: center;
     height: 350px;
     width: 80%;
+    font-size: 22px;
 }
 
 #scoreTable table tr{
     border: 1px solid green;
+    height: 40px;
 }
 
 #scoreTable table th{
@@ -42,6 +44,8 @@ header h1{
     height: 100%;
     text-align: center;
     margin: auto;
+    font-weight: bold;
+    /* font-size: 20px; */
 }
 
 footer
@@ -80,3 +84,11 @@ tr>td:first-child {
     font-weight: bold;
 }
 
+#score,#creditHour {
+    font-size: 18px;
+}
+
+input:focus{
+    background-color: green;
+    color: white;
+}
