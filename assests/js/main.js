@@ -2,7 +2,7 @@ function changeMarks(courseId)
 {
     let course = document.getElementById(courseId);
     let marks = course.querySelector('#score');
-    if(Number(marks.value)>=0 && Number(marks.value)<=100){
+    if(marks.value!="" && Number(marks.value)>=0 && Number(marks.value)<=100){
         let m = Number(marks.value);
         let grade = findGrade(m);
         let gradePoint = findGradePoint(m);
