@@ -2,10 +2,10 @@ function changeMarks(courseId)
 {
     let course = document.getElementById(courseId);
     let marks = course.querySelector('#score');
-    if(Number(marks.value)>=1 && Number(marks.value)<=100){
+    if(Number(marks.value)>=0 && Number(marks.value)<=100){
         let m = Number(marks.value);
-        let grade = findGrade(marks);
-        let gradePoint = findGradePoint(marks);
+        let grade = findGrade(m);
+        let gradePoint = findGradePoint(m);
         course.querySelector("#gradePoint").innerHTML = gradePoint;
         course.querySelector("#grade").innerHTML = grade;        
     }
@@ -43,7 +43,7 @@ function calculateGrade()
         }   
     }
     if(count>0){
-        gpa = sum / creditHour;
+        gpa = sum / totalCreditHours;
         document.getElementById('gpa').innerHTML = gpa.toString();
     }
     
