@@ -33,8 +33,7 @@ function calculateGrade()
         marks = course.querySelector('#score');
         if(marks.value!="")
         {
-            creditHour = course.querySelector('#creditHour').value;
-            
+            creditHour = Number(course.querySelector('#creditHour').value);
             sum += findGradePoint(marks.value) * creditHour; 
             totalCreditHours += creditHour;
             count++;
@@ -43,10 +42,11 @@ function calculateGrade()
         }   
     }
     if(count>0){
+        console.log(`Sum = ${sum}`);
+        console.log(`Total Credit Hours = ${totalCreditHours}`);
         gpa = sum / totalCreditHours;
-        document.getElementById('gpa').innerHTML = gpa.toString();
+        document.getElementById('gpa').innerHTML = gpa.toFixed(2).toString();
     }
-    
 
 }
 
