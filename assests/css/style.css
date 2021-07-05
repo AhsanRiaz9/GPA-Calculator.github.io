@@ -1,0 +1,82 @@
+body{
+    font-family: 'Roboto', sans-serif;   
+}
+
+header h1{
+    text-align: center;
+    color:green;
+}
+
+#scoreTable table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid green;
+    border-collapse: collapse;
+    text-align: center;
+    height: 350px;
+    width: 80%;
+}
+
+#scoreTable table tr{
+    border: 1px solid green;
+}
+
+#scoreTable table th{
+    background-color: green;
+    padding: 8px;
+    color: white;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+#scoreTable table td{
+    background-color:azure;
+    color: green;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#scoreTable table td input,select{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+footer
+{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer button
+{
+    border-radius: 50px solid green;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px; 
+    width: 300px;
+    height: 50px;
+}
+
+footer p{
+    font-size: 25px;
+}
+footer #gpa{
+    text-decoration: underline;
+    color: green;
+}
+
+tr>td:first-child {
+    font-weight: bold;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>PUCIT GPA Calculator</h1>
+    </header>
+    <div id="scoreTable">
+        <table>
+            <tr>
+                <th>Serial #</th>
+                <th>Course Name</th>
+                <th>Credit Hours</th>
+                <th>Marks</th>
+                <th>Grade Point</th>
+                <th>Grade</th>
+            </tr>
+            <tr id="course1">
+                <td>1</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course1")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course2">
+                <td>2</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course2")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course3">
+                <td>3</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course3")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course4">
+                <td>4</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course4")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course5">
+                <td>5</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course5")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course6">
+                <td>6</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course6")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+            <tr id="course7">
+                <td>7</td>
+                <td><input type='text' /></td>
+                <td>
+                    <select name="creditHour" id="creditHour">
+                        <option selected value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+                <td><input type='number' min='0' max='100' id="score" onchange='changeMarks("course7")'/></td>
+                <td id="gradePoint">-</td>
+                <td id="grade">-</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <button onclick="calculateGrade()">Calculate GPA</button>
+        <p>Your GPA is <span id="gpa"> ? </span></p>
+    </footer>
+</body>
+
+    <script src="./assests/js/main.js"></script>
+</html>
