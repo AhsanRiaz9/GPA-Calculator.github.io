@@ -11,6 +11,15 @@ header h1{
     color:green;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 #scoreTable table{
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +28,7 @@ header h1{
     text-align: center;
     height: 350px;
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #scoreTable table tr{
@@ -49,12 +58,10 @@ header h1{
     text-align: center;
     margin: auto;
     font-weight: bold;
-    /* font-size: 20px; */
 }
 
 footer
 {
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -65,19 +72,18 @@ footer
 
 footer button
 {
-    border-radius: 50px solid green;
-    border: none;
+    border: 50px solid green;
+    border-style: none;
     background-color: green;
     color: white;
     font-size: 20px;
-    padding: 10px;
-    margin-top: 20px; 
-    width: 300px;
+    margin-top: 10px; 
+    width: 250px;
     height: 50px;
 }
 
 footer p{
-    font-size: 25px;
+    font-size: 20px;
 }
 footer #gpa{
     text-decoration: underline;
