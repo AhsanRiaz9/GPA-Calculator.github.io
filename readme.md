@@ -2,4 +2,4 @@
 ## You can find your GPA for this website link
 ### Url: https://ahsanriaz9.github.io/GPA-Calculator.github.io/
 
-!["Output of program"](output.png)
+!["Output of program"](output.PNG)
