@@ -15,6 +15,8 @@ header{
     display: flex;
     justify-content: center;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -77,9 +79,13 @@ footer button
     background-color: green;
     color: white;
     font-size: 20px;
-    margin-top: 10px; 
-    width: 250px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
     height: 50px;
+    font-weight: bold;
+    border-radius: 25px;
 }
 
 footer p{
@@ -101,4 +107,53 @@ tr>td:first-child {
 input:focus{
     background-color: green;
     color: white;
+}
+
+
+@media screen and (max-width:700px){
+    header h1{
+        height: 2px;
+        font-size: 25px;
+
+
+    }
+    #scoreTable table{
+        width: 80%;
+        font-size: 15px;
+        height: 200px;
+    }
+    #scoreTable tr{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    #scoreTable tr th{
+        font-size: 15px;
+        padding: 10px;
+        margin: 0;
+    }
+    input{
+        font-size: 13px;
+    }
+    select{
+        font-size: 13px;
+    } 
+    footer button{
+        width: 30%;
+        height: 30px;
+        padding: 0;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        /* width: 0; */
+    }
+    
+}
+
+@media screen and (max-height:700px)
+{
+    #scoreTable table{
+        height: 50%;
+    }
 }
